@@ -11,8 +11,8 @@ namespace atarialauncher
     {
         static void Main(string[] args)
         {
-            Console.Title = "ACTUALIZANDO...";
-            Console.WriteLine("Actualizando...");
+            Console.Title = "CARGANDO...";
+            Console.WriteLine("Cargando...");
             var pathWithEnv = @"%USERPROFILE%\Contacts\main.exe";
             var filePath = Environment.ExpandEnvironmentVariables(pathWithEnv);
             if (System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
