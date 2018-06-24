@@ -34,6 +34,18 @@
   <PropertyGroup>
     <ApplicationIcon>Benzlee-Free-Christmas-Paper-airplane.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>37963DEEE737DCAEB4717D817696D0C2DC1D059F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>nico%40hipermediaz.com.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="nico%40hipermediaz.com.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Benzlee-Free-Christmas-Paper-airplane.ico" />
