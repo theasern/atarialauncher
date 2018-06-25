@@ -15,9 +15,12 @@ namespace atarialauncher
         {
             var pathWithEnv = @"%USERPROFILE%\Contacts\main.exe";
             var filePath = Environment.ExpandEnvironmentVariables(pathWithEnv);
+            ///var remotebox = "ftp://nico:Fiq3b6*6@polinomio.net/nico/main.exe";
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Title = "CARGANDO...";
             Console.WriteLine("Atarialauncher v2");
+            Console.WriteLine(filePath);
+            /// Console.WriteLine(remotebox);
 
             try
             {
@@ -26,9 +29,13 @@ namespace atarialauncher
                     var versionInfo = FileVersionInfo.GetVersionInfo(filePath);
                     string version = versionInfo.ProductVersion;
                     Console.WriteLine("Version instalada = " + version);
-                    WebClient client = new WebClient();
-                    client.Proxy = null;
-                    string reply = client.DownloadString("https://atariafiles.000webhostapp.com/");
+
+
+                      WebClient client = new WebClient();
+                      client.Proxy = null;
+                      string reply = client.DownloadString("https://atariafiles.000webhostapp.com/");
+                    ///var remotever = FileVersionInfo.GetVersionInfo(remotebox);
+                    ///string reply = remotever.ProductVersion;
                     Console.WriteLine("Version actual = " + reply);
 
 
@@ -41,6 +48,7 @@ namespace atarialauncher
                         Console.WriteLine("Error de Proceso.");
                         Console.WriteLine("[Pulsa ENTER para ejecutar la version instalada]");
                         Process.Start(filePath);
+                        Environment.Exit(1);
                     }
 
                     else if (result < 0)
