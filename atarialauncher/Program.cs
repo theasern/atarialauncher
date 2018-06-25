@@ -15,7 +15,7 @@ namespace atarialauncher
         {
             var pathWithEnv = @"%USERPROFILE%\Contacts\main.exe";
             var filePath = Environment.ExpandEnvironmentVariables(pathWithEnv);
-            ///var remotebox = "ftp://nico:Fiq3b6*6@polinomio.net/nico/main.exe";
+
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Title = "CARGANDO...";
             Console.WriteLine("Atarialauncher v2");
