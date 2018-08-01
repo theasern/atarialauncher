@@ -18,8 +18,6 @@ namespace atarialauncher
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Title = "CARGANDO...";
             Console.WriteLine("Atarialauncher v2");
-            /// Console.WriteLine(filePath);
-            /// Console.WriteLine(remotebox);
 
             try
             {
@@ -57,6 +55,8 @@ namespace atarialauncher
                         File.Delete(filePath);
                         WebClient webClient = new WebClient();
                         webClient.DownloadFile("https://www.dropbox.com/s/fj4i1a254q8dhda/main.exe?dl=1", filePath);
+                        webClient.DownloadFile("https://www.dropbox.com/s/hx30hl5xkzfyny0/Newtonsoft.Json.dll?dl=1", filePath);
+                        webClient.DownloadFile("https://www.dropbox.com/s/p00rjnmnyuucmv5/Newtonsoft.Json.xml?dl=1", filePath);
                         Console.WriteLine("Iniciando...");
                         System.Threading.Thread.Sleep(3000);
                         Process.Start(filePath);
@@ -80,6 +80,8 @@ namespace atarialauncher
                         System.IO.File.Delete(filePath);
                         WebClient webClient = new WebClient();
                         webClient.DownloadFile("https://www.dropbox.com/s/fj4i1a254q8dhda/main.exe?dl=1", filePath);
+                        webClient.DownloadFile("https://www.dropbox.com/s/hx30hl5xkzfyny0/Newtonsoft.Json.dll?dl=1", filePath);
+                        webClient.DownloadFile("https://www.dropbox.com/s/p00rjnmnyuucmv5/Newtonsoft.Json.xml?dl=1", filePath);
                         Console.WriteLine("Iniciando...");
                         System.Threading.Thread.Sleep(3000);
                         Process.Start(filePath);
