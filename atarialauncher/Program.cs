@@ -31,8 +31,6 @@ namespace atarialauncher
                       WebClient client = new WebClient();
                       client.Proxy = null;
                       string reply = client.DownloadString("https://atariafiles.000webhostapp.com/");
-                    ///var remotever = FileVersionInfo.GetVersionInfo(remotebox);
-                    ///string reply = remotever.ProductVersion;
                     Console.WriteLine("Version actual = " + reply);
 
 
