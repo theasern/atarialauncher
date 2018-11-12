@@ -35,7 +35,7 @@
     <ApplicationIcon>Benzlee-Free-Christmas-Paper-airplane.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>37963DEEE737DCAEB4717D817696D0C2DC1D059F</ManifestCertificateThumbprint>
